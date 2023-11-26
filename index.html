@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans:wght@600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="btn_container">
+        <h1>choose any quiz to solve</h1>
+        <div class="btc1">
+            <input type="button" value="html" id="btn_html" onclick="start(value)">
+            <input type="button" value="javascript" id="btn_js" onclick="start(value)">
+            <input type="button" value="css" id="btn_css" onclick="start(value)">
+            <input type="button" value="python" id="btn_py" onclick="start(value)">
+        </div>
+    </div>
+    <form class="container_1">
+
+        <h2 class="que">orem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, sunt?</h2>
+        <ul class="list">
+            <li>
+                <input type="radio" name="cbox" id="opt_1" value="0" data-id="0">
+                <label for="a" id="a">
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="cbox" id="opt_2" value="1" data-id="1">
+                <label for="b" id="b"></label>
+            </li>
+            <li>
+                <input type="radio" name="cbox" id="opt_3" value="2" data-id="2">
+                <label for="c" id="c"></label>
+            </li>
+            <li>
+                <input type="radio" name="cbox" id="opt_4" value="3" data-id="3">
+                <label for="d" id="d"></label>
+            </li>
+        </ul>
+        <div class="btn_container">
+            <input type="button" value="submit" onclick="check_mcq()">
+        </div>
+    </form>
+    <div class="container_2">
+        <h1 id="score_disp">your score is </h1>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

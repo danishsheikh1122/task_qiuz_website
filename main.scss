@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("bg-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn_container {
+        width: 60rem;
+        height: 40rem;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.8rem;
+            font-weight: bold;
+            color: white;
+            text-transform: capitalize;
+            text-decoration: underline;
+        }
+        .btc1 {
+            width: 100%;
+            height: 20rem;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            input {
+                width: 40%;
+                height: 3rem;
+                border: none;
+                border: 2px dotted;
+                border-radius: 1rem;
+                transition: all 0.2s ease-in-out;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+            input[value="html"] {
+                color: #ff6347;
+                &:hover {
+                    border: 3px dashed #ff6347;
+                }
+            }
+            input[value="javascript"] {
+                color: black;
+                border-color: #ffff00;
+                &:hover {
+                    border: 3px dashed #5a5a04;
+                }
+            }
+            input[value="css"] {
+                color: #0000ff;
+                border-color: #0000ff;
+                &:hover {
+                    border: 3px dashed #0000ff;
+                }
+            }
+            input[value="python"] {
+                color: black;
+                &:hover {
+                    border: 3px dashed black;
+                }
+            }
+        }
+    }
+    .container_1 {
+        width: 80rem;
+        height: 60rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        background: rgba(255, 255, 255, 0.55);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        .que {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 20%;
+            font-size: 4rem;
+        }
+        .list {
+            width: 100%;
+            height: 70%;
+            list-style-type: none;
+            padding: 4rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            li {
+                width: 90%;
+                height: 10rem;
+                display: flex;
+                align-items: center;
+                border: 2px dashed rgb(161, 158, 158);
+                border-radius: 10px;
+                input {
+                    width: 10%;
+                    height: 2.5rem;
+                }
+                label {
+                    width: 90%;
+                    height: 100%;
+                    font-size: 2.4rem;
+                    font-style: bold;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .btn_container {
+            height: 10%;
+            width: 100%;
+            padding: 0 4rem;
+            display: flex;
+            input {
+                align-self: flex-end;
+                font-size: 2rem;
+                width: 100px;
+                border: none;
+                border: 0.4rem dotted dodgerblue;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    border: 0.8rem dotted dodgerblue;
+                }
+            }
+        }
+    }
+    .container_2 {
+        width: 60rem;
+        height: 40rem;
+        padding: 2rem;
+        // display: flex;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.55);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        h1 {
+            text-transform: capitalize;
+            font-size: 6rem;
+            color: rgb(35, 35, 35);
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+    html {
+        font-size: 6px;
+    }
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("bg-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        .btn_container {
+            h1 {
+                font-size: 3rem;
+            }
+            .btc1 {
+                height: 100%;
+                input {
+                    width: 60%;
+                    height: 100%;
+                }
+            }
+        }
+        .container_1 {
+            .que {
+                font-size: 3rem;
+            }
+        }
+        .container_2 {
+            width: 40rem;
+            height: 40rem;
+            padding: 2rem;
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+    html {
+        font-size: 7px;
+    }
+    body {
+        .btn_container {
+            h1 {
+                font-size: 3rem;
+            }
+            .btc1 {
+                height: 100%;
+                input {
+                    width: 60%;
+                    height: 100%;
+                }
+            }
+        }
+        .container_1 {
+            .que {
+                font-size: 3rem;
+            }
+        }
+        .container_2 {
+            width: 40rem;
+            height: 40rem;
+            padding: 2rem;
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+}
